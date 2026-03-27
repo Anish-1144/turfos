@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@config "../tailwind.config.ts";
+
+@theme {
+  --font-syne: var(--font-syne), sans-serif;
+  --font-dm: var(--font-dm-sans), sans-serif;
+  --color-navy: #1A1F2E;
+}
+
+body {
+  @apply bg-white text-gray-700 font-dm;
+}
