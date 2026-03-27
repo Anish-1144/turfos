@@ -8,33 +8,42 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    quote: 'Best courts in the city',
+    quote: "Best courts in the city",
     text: "I absolutely love playing here! The courts are always in excellent condition, and the location is super convenient. It's the perfect spot to unwind and enjoy a great game every weekend.",
-    name: 'Samantha L.',
-    role: 'Business man',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=face',
-    mainImage: 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=1200&auto=format&fit=crop',
-    sideImage: 'https://images.unsplash.com/photo-1554068865-24ceea4eb0db?q=80&w=800&auto=format&fit=crop',
+    name: "Samantha L.",
+    role: "Business man",
+    avatar:
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=face",
+    mainImage:
+      "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=1200&auto=format&fit=crop",
+    sideImage:
+      "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop",
   },
   {
     id: 2,
-    quote: 'Incredible facilities',
+    quote: "Incredible facilities",
     text: "The turf quality is exceptional and booking was a breeze. I booked a 5-a-side session for my team and we had an absolute blast. Will definitely be coming back every week!",
-    name: 'Rahul M.',
-    role: 'Football Coach',
-    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80&h=80&fit=crop&crop=face',
-    mainImage: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop',
-    sideImage: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=800&auto=format&fit=crop',
+    name: "Rahul M.",
+    role: "Football Coach",
+    avatar:
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80&h=80&fit=crop&crop=face",
+    mainImage:
+      "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop",
+    sideImage:
+      "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 3,
-    quote: 'A game changer for athletes',
+    quote: "A game changer for athletes",
     text: "TurfOS has completely changed how I organize my training. I can book, reschedule, and even track my sessions from a single app. Massive shoutout to the management team!",
-    name: 'Priya K.',
-    role: 'Professional Athlete',
-    avatar: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&h=80&fit=crop&crop=face',
-    mainImage: 'https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?q=80&w=1200&auto=format&fit=crop',
-    sideImage: 'https://images.unsplash.com/photo-1519766304817-4f37bda74a26?q=80&w=800&auto=format&fit=crop',
+    name: "Priya K.",
+    role: "Professional Athlete",
+    avatar:
+      "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&h=80&fit=crop&crop=face",
+    mainImage:
+      "https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?q=80&w=1200&auto=format&fit=crop",
+    sideImage:
+      "https://images.unsplash.com/photo-1519766304817-4f37bda74a26?q=80&w=800&auto=format&fit=crop",
   },
 ];
 

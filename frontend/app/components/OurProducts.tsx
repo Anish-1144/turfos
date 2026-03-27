@@ -10,43 +10,48 @@ const categories = ['See all', 'Footwear', 'Apparel', 'Equipment', 'Accessories'
 const products = [
   {
     id: 1,
-    name: 'Turf Football Cleats',
-    price: '₹2,499',
-    category: 'Footwear',
-    image: 'https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=1200&auto=format&fit=crop',
-    size: 'large',
+    name: "Turf Football Cleats",
+    price: "₹2,499",
+    category: "Footwear",
+    image:
+      "https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=1200&auto=format&fit=crop",
+    size: "large",
   },
   {
     id: 2,
-    name: 'Football Match Ball',
-    price: '₹999',
-    category: 'Equipment',
-    image: 'https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?q=80&w=1200&auto=format&fit=crop',
-    size: 'large',
+    name: "Football Match Ball",
+    price: "₹999",
+    category: "Equipment",
+    image:
+      "https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=800&auto=format&fit=crop",
+    size: "large",
   },
   {
     id: 3,
-    name: 'Sports Performance Tee',
-    price: '₹1,199',
-    category: 'Apparel',
-    image: 'https://images.unsplash.com/photo-1565084888279-aca607ecce0c?q=80&w=800&auto=format&fit=crop',
-    size: 'small',
+    name: "Sports Performance Tee",
+    price: "₹1,199",
+    category: "Apparel",
+    image:
+      "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=800&auto=format&fit=crop",
+    size: "small",
   },
   {
     id: 4,
-    name: 'Cricket Batting Gloves',
-    price: '₹1,499',
-    category: 'Accessories',
-    image: 'https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=800&auto=format&fit=crop',
-    size: 'small',
+    name: "Cricket Batting Gloves",
+    price: "₹1,499",
+    category: "Accessories",
+    image:
+      "https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=800&auto=format&fit=crop",
+    size: "small",
   },
   {
     id: 5,
-    name: 'Tennis Racket Pro',
-    price: '₹4,599',
-    category: 'Equipment',
-    image: 'https://images.unsplash.com/photo-1554068865-24ceea4eb0db?q=80&w=800&auto=format&fit=crop',
-    size: 'small',
+    name: "Tennis Racket Pro",
+    price: "₹4,599",
+    category: "Equipment",
+    image:
+      "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=1200&auto=format&fit=crop",
+    size: "small",
   },
 ];
 
