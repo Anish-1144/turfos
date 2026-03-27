@@ -1,17 +1,23 @@
 "use client";
 
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { motion, AnimatePresence } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
+import React, { useState } from "react";
+import Image from "next/image";
+import { motion, AnimatePresence } from "motion/react";
+import { ArrowRight } from "lucide-react";
 
-const categories = ['See all', 'Footwear', 'Apparel', 'Equipment', 'Accessories'];
+const categories = [
+  "See all",
+  "Footwear",
+  "Apparel",
+  "Equipment",
+  "Accessories",
+];
 
 const products = [
   {
     id: 1,
     name: "Turf Football Cleats",
-    price: "₹2,499",
+    price: "$2,499",
     category: "Footwear",
     image:
       "https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=1200&auto=format&fit=crop",
@@ -20,7 +26,7 @@ const products = [
   {
     id: 2,
     name: "Football Match Ball",
-    price: "₹999",
+    price: "$999",
     category: "Equipment",
     image:
       "https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=800&auto=format&fit=crop",
@@ -29,7 +35,7 @@ const products = [
   {
     id: 3,
     name: "Sports Performance Tee",
-    price: "₹1,199",
+    price: "$1,199",
     category: "Apparel",
     image:
       "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=800&auto=format&fit=crop",
@@ -38,7 +44,7 @@ const products = [
   {
     id: 4,
     name: "Cricket Batting Gloves",
-    price: "₹1,499",
+    price: "$1,499",
     category: "Accessories",
     image:
       "https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=800&auto=format&fit=crop",
@@ -47,7 +53,7 @@ const products = [
   {
     id: 5,
     name: "Tennis Racket Pro",
-    price: "₹4,599",
+    price: "$4,599",
     category: "Equipment",
     image:
       "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=1200&auto=format&fit=crop",
@@ -55,7 +61,7 @@ const products = [
   },
 ];
 
-const ProductCard = ({ product }: { product: typeof products[number] }) => (
+const ProductCard = ({ product }: { product: (typeof products)[number] }) => (
   <motion.div
     layout
     initial={{ opacity: 0, scale: 0.96 }}
@@ -76,8 +82,12 @@ const ProductCard = ({ product }: { product: typeof products[number] }) => (
     {/* Bottom content */}
     <div className="absolute bottom-0 left-0 right-0 p-5 flex items-end justify-between">
       <div>
-        <p className="font-syne font-bold text-white text-[15px] md:text-[16px] leading-tight">{product.name}</p>
-        <p className="font-syne font-extrabold text-white text-[18px] mt-0.5">{product.price}</p>
+        <p className="font-syne font-bold text-white text-[15px] md:text-[16px] leading-tight">
+          {product.name}
+        </p>
+        <p className="font-syne font-extrabold text-white text-[18px] mt-0.5">
+          {product.price}
+        </p>
       </div>
       <button className="bg-white hover:bg-[#A8E040] transition-colors text-gray-900 rounded-full px-4 py-2 font-dm font-semibold text-[12px] whitespace-nowrap flex items-center gap-1.5 group/btn shadow-md">
         Shop Now
@@ -88,21 +98,22 @@ const ProductCard = ({ product }: { product: typeof products[number] }) => (
 );
 
 export const OurProducts = () => {
-  const [activeCategory, setActiveCategory] = useState('See all');
+  const [activeCategory, setActiveCategory] = useState("See all");
 
-  const filtered = activeCategory === 'See all'
-    ? products
-    : products.filter(p => p.category === activeCategory);
+  const filtered =
+    activeCategory === "See all"
+      ? products
+      : products.filter((p) => p.category === activeCategory);
 
   return (
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="w-full px-5 sm:px-8 md:px-12 lg:px-16 xl:px-24">
-
         {/* Header */}
         <div className="text-center mb-10">
           <p className="font-dm text-[13px] text-gray-400 mb-2">Our Products</p>
           <h2 className="font-syne font-bold text-[30px] md:text-[48px] text-gray-900 leading-tight tracking-tight">
-            Explore Our Exclusive<br className="hidden md:block" /> Sports Products
+            Explore Our Exclusive
+            <br className="hidden md:block" /> Sports Products
           </h2>
         </div>
 
@@ -115,8 +126,8 @@ export const OurProducts = () => {
                 onClick={() => setActiveCategory(cat)}
                 className={`rounded-full px-5 py-2 font-dm text-[13px] font-medium transition-all duration-200 ${
                   activeCategory === cat
-                    ? 'bg-[#1A4526] text-white shadow-sm'
-                    : 'bg-white text-gray-600 border border-gray-200 hover:border-gray-300'
+                    ? "bg-[#1A4526] text-white shadow-sm"
+                    : "bg-white text-gray-600 border border-gray-200 hover:border-gray-300"
                 }`}
               >
                 {cat}
@@ -153,13 +164,15 @@ export const OurProducts = () => {
 
             {/* Bottom row: up to 3 smaller cards */}
             {filtered.length >= 3 && (
-              <div className={`col-span-1 md:col-span-2 grid gap-4 h-[280px] md:h-[300px] ${
-                filtered.length === 3
-                  ? 'grid-cols-1'
-                  : filtered.length === 4
-                  ? 'grid-cols-2'
-                  : 'grid-cols-1 md:grid-cols-3'
-              }`}>
+              <div
+                className={`col-span-1 md:col-span-2 grid gap-4 h-[280px] md:h-[300px] ${
+                  filtered.length === 3
+                    ? "grid-cols-1"
+                    : filtered.length === 4
+                      ? "grid-cols-2"
+                      : "grid-cols-1 md:grid-cols-3"
+                }`}
+              >
                 {filtered.slice(2).map((product) => (
                   <ProductCard key={product.id} product={product} />
                 ))}
@@ -167,7 +180,6 @@ export const OurProducts = () => {
             )}
           </motion.div>
         </AnimatePresence>
-
       </div>
     </section>
   );
