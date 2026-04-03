@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useBooking } from "@/lib/booking/context";
-import { LOCATIONS, spaceById } from "@/lib/booking/constants";
+import { spaceById } from "@/lib/booking/constants";
 import { PaymentForm } from "../payment/PaymentForm";
 import {
   BookingEyebrow,
@@ -14,7 +14,7 @@ import {
 
 export default function BookingCheckoutPage() {
   const router = useRouter();
-  const { draft, setLocation, setCustomer, amountCents } = useBooking();
+  const { draft, setCustomer, amountCents } = useBooking();
 
   useEffect(() => {
     if (!draft.spaceId || !draft.date || !draft.slotStart) {
@@ -42,22 +42,6 @@ export default function BookingCheckoutPage() {
             Your details
           </h2>
           <div className="mt-4 space-y-4">
-            <div>
-              <label className="font-dm text-xs font-medium text-gray-500">
-                Venue
-              </label>
-              <select
-                value={draft.location}
-                onChange={(e) => setLocation(e.target.value)}
-                className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2.5 font-dm text-sm outline-none focus:border-[#A8E040] focus:ring-2 focus:ring-[#A8E040]/30"
-              >
-                {LOCATIONS.map((loc) => (
-                  <option key={loc} value={loc}>
-                    {loc}
-                  </option>
-                ))}
-              </select>
-            </div>
             <div>
               <label className="font-dm text-xs font-medium text-gray-500">
                 Name
