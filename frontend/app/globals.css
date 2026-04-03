@@ -11,3 +11,25 @@
 body {
   @apply bg-white text-gray-700 font-dm;
 }
+
+@keyframes display-pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.7);
+  }
+}
+
+@keyframes display-glow-yellow {
+  0%,
+  100% {
+    border-color: rgba(245, 200, 66, 0.25);
+  }
+  50% {
+    border-color: rgba(245, 200, 66, 0.55);
+  }
+}

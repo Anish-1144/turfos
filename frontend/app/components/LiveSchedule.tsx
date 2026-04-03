@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { motion } from 'motion/react';
 import { Radio, ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -204,9 +205,12 @@ export const LiveSchedule = () => {
                 <p className="font-dm text-[11px] text-gray-400 mt-0.5">Booked / Limited</p>
               </div>
               <div className="ml-auto">
-                <button className="bg-[#1A4526] text-white rounded-full px-5 py-2.5 font-dm font-semibold text-[13px] hover:bg-[#0F2916] transition-colors">
+                <Link
+                  href="/booking"
+                  className="inline-block bg-[#1A4526] text-white rounded-full px-5 py-2.5 font-dm font-semibold text-[13px] hover:bg-[#0F2916] transition-colors"
+                >
                   Book a Slot
-                </button>
+                </Link>
               </div>
             </div>
           </div>

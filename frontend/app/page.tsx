@@ -1,19 +1,19 @@
 "use client";
 
-import { Navbar } from './components/Navbar';
-import { HeroSection } from './components/HeroSection';
-import { TrustStrip } from './components/TrustStrip';
-import { HowItWorks } from './components/HowItWorks';
-import { SpaceExplorer } from './components/SpaceExplorer';
-import { LiveSchedule } from './components/LiveSchedule';
-import { AboutSection } from './components/AboutSection';
-import { ServiceSection } from './components/ServiceSection';
-import { DealsSection } from './components/DealsSection';
-import { MembershipTeaser } from './components/MembershipTeaser';
-import { Testimonials } from './components/Testimonials';
-import { FAQ } from './components/FAQ';
-import { OurProducts } from './components/OurProducts';
-import { Footer } from './components/Footer';
+import { Navbar } from "./components/Navbar";
+import { HeroSection } from "./components/HeroSection";
+import { TrustStrip } from "./components/TrustStrip";
+import { HowItWorks } from "./components/HowItWorks";
+import { SpaceExplorer } from "./components/SpaceExplorer";
+import { LiveSchedule } from "./components/LiveSchedule";
+import { AboutSection } from "./components/AboutSection";
+import { ServiceSection } from "./components/ServiceSection";
+import { DealsSection } from "./components/DealsSection";
+import { MembershipTeaser } from "./components/MembershipTeaser";
+import { Testimonials } from "./components/Testimonials";
+import { FAQ } from "./components/FAQ";
+import { OurProducts } from "./components/OurProducts";
+import { Footer } from "./components/Footer";
 
 export default function HomePage() {
   return (
@@ -27,17 +27,16 @@ export default function HomePage() {
       {/* <HowItWorks /> */}
       {/* <SpaceExplorer /> */}
       <LiveSchedule />
-      
+
       <AboutSection />
-    
-       <DealsSection />
-         <OurProducts />
+
+      <DealsSection />
+      <OurProducts />
       <ServiceSection />
-     
+
       <Testimonials />
       <MembershipTeaser />
-      
-     
+
       <FAQ />
       <Footer />
     </main>
